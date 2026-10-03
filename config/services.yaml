@@ -26,3 +26,5 @@ services:
     App\Expats\Domain\Repository\UserRepositoryInterface:
         alias: App\Expats\Infrastructure\Repository\UserRepository
 
+    App\Expats\Domain\Repository\CityRepositoryInterface:
+        alias: App\Expats\Infrastructure\Repository\CityRepository
