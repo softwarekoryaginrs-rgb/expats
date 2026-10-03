@@ -12,7 +12,7 @@ use App\Expats\Domain\Entity\City;
  * @method array<City> findAll()
  * @method array<City> findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-interface CityRepositoryInteface
+interface CityRepositoryInterface
 {
 
 }

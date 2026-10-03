@@ -8,14 +8,14 @@ use App\Expats\Application\DTO\CityDTO;
 use App\Expats\Application\Query\City\GetCitiesQuery;
 use App\Expats\Application\Result\City\GetCitiesQueryResult;
 use App\Expats\Domain\Entity\City;
-use App\Expats\Domain\Repository\CityRepositoryInteface;
+use App\Expats\Domain\Repository\CityRepositoryInterface;
 use App\Shared\Application\Query\QueryHandlerInterface;
 use Symfony\Component\ObjectMapper\ObjectMapperInterface;
 
 final readonly class GetCitiesQueryHandler implements QueryHandlerInterface
 {
     public function __construct(
-        private CityRepositoryInteface $cityRepository,
+        private CityRepositoryInterface $cityRepository,
         private ObjectMapperInterface $objectMapper,
     ) {
     }

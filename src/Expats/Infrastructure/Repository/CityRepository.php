@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace App\Expats\Infrastructure\Repository;
 
 use App\Expats\Domain\Entity\City;
-use App\Expats\Domain\Repository\CityRepositoryInteface;
+use App\Expats\Domain\Repository\CityRepositoryInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
  * @extends ServiceEntityRepository<City>
  */
-class CityRepository extends ServiceEntityRepository implements CityRepositoryInteface
+class CityRepository extends ServiceEntityRepository implements CityRepositoryInterface
 {
     public function __construct(ManagerRegistry $registry)
     {
